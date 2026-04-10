@@ -1,12 +1,12 @@
 # Artificial Pancreas
 
-## Description
+## 📌 Description
 
 This project analyzes an artificial pancreas system that automatically regulates blood glucose levels using a closed-loop control system.
 
 ---
 
-## Working Principle
+## ⚙️ Working Principle
 
 1. Glucose measurement  
 2. Error calculation  
@@ -16,7 +16,7 @@ This project analyzes an artificial pancreas system that automatically regulates
 
 ---
 
-## Minimal Model
+## 🧮 Minimal Model
 
 dG/dt = -(SG + x)G + C  
 dx/dt = kaI - kb x  
@@ -25,14 +25,14 @@ Operating point: (7.5, 0.009, 15)
 
 ---
 
-## Linearized Model
+## 📉 Linearized Model
 
 dx1/dt = -0.023x1 - 7.5x2  
 dx2/dt = 6·10^-6 u - 0.01x2  
 
 ---
 
-## Controller
+## 🎛️ Controller
 
 A PID controller is used:  
 Gr(s) = kd s² + kp s + ki  
@@ -44,7 +44,7 @@ Ki = -0.2
 
 ---
 
-## Stability
+## ✅ Stability
 
 The system is stable (Nyquist analysis).
 
