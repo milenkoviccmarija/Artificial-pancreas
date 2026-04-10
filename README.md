@@ -3,23 +3,12 @@
 ## Opis
 Projekat analizira sistem veštačkog pankreasa koji automatski reguliše nivo glukoze u krvi pomoću zatvorene upravljačke petlje.
 
-Sistem se sastoji od:
-- CGM senzora (merenje glukoze)
-- algoritma (obrada podataka)
-- insulinske pumpe (doziranje insulina)
-
 ## Princip rada
 1. Merenje glukoze  
 2. Izračunavanje greške  
 3. Određivanje doze insulina  
 4. Ubrizgavanje insulina  
-5. Povratna sprega  
-
-## Ograničenja
-- kašnjenje i netačnost CGM senzora  
-- uticaj ishrane, stresa i aktivnosti  
-- spor odziv insulina  
-- tehnički problemi pumpe  
+5. Povratna sprega   
 
 ## Minimalni model
 dG/dt = -(SG + x)G + C  
@@ -43,5 +32,3 @@ Ki = -0.2
 ## Stabilnost
 Sistem je stabilan (Nyquist analiza).  
 
-## Zaključak
-Projekat pokazuje primenu teorije upravljanja u regulaciji nivoa glukoze i unapređenju terapije dijabetesa.
